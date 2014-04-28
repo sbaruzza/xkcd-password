@@ -1,7 +1,7 @@
 var xkcd = {} // Will transform into a namespace declaration
 xkcd.available = [
 	{name: 'english-common-5k', description:'English common words (5K)'},
-	{name: 'english-nouns-55kx', description:'English nouns (55K)'}
+	{name: 'english-nouns-55k', description:'English nouns (55K)'}
 ];
 xkcd.selected = "english-common-5k";
 
