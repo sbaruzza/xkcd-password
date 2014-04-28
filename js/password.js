@@ -18,7 +18,9 @@ xkcd.generatePassword = function() {
 }
 
 xkcd.showPassword = function() {
-	$('#password').text(xkcd.generatePassword());
+	var password = xkcd.generatePassword();
+	$('#password').text(password);
+	$('#password-length').text('Password is '+password.length+' characters long.');
 }
 
 xkcd.loadWordsList = function(name) {
