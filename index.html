@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>XKCD-style password generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="http://code.jquery.com/jquery.js"></script><!-- Move to local -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/password.js"></script>
+  </head>
+  <body role="document">
+    <div class="container" role="main">
+      <div class="row">
+        <h1>XKCD-style password generator</h1>
+      </div>
+      <div class="row">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h3 id="password" class="text-center">&nbsp;</h3>
+          </div>
+          <div class="panel-footer">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="btn-group">
+                  <button id="words-list-button" type="button" class="btn btn-default">Words list</button>
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    <span class="sr-only">Select word list</span>
+                  </button>
+                  <ul id="words-lists" class="dropdown-menu" role="menu">
+                   
+                  </ul>
+                </div>
+                <button id="generate" type="button" class="btn btn-primary disabled pull-right" disabled="disabled">Generate!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
