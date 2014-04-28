@@ -15,6 +15,12 @@
         <h1>XKCD-style password generator</h1>
       </div>
       <div class="row">
+        <div id="load-error" class="alert alert-danger hidden">
+          <strong>Something went wrong...</strong> Unable to load words list.
+          <button id='load-error-close' type="button" class="close" aria-hidden="true">&times;</button>
+        </div>
+      </div>
+      <div class="row">
         <div class="panel panel-default">
           <div class="panel-body">
             <h3 id="password" class="text-center">&nbsp;</h3>
