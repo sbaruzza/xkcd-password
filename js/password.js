@@ -41,14 +41,13 @@ $(document).ready(function(){
 		var a = document.createElement("a");
 		a.setAttribute("href", "#");
 		a.setAttribute("id", menu.name);
-		a.textContent=menu.description;
+		a.onclick = function(){xkcd.loadWordsList(menu.name)};
+		a.textContent = menu.description;
 		var li = document.createElement("li");
 		li.appendChild(a);
 		$('#words-lists').append(li);
 	});
 	
-	$('#english-common-5k').click(function(){xkcd.loadWordsList('english-common-5k')});
-	$('#english-nouns-55k').click(function(){xkcd.loadWordsList('english-nouns-55k')});
 	xkcd.wordList = [];
 	xkcd.loadWordsList(xkcd.available[0].name);
 })
