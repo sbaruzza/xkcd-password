@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="bootstrap/css/docs.min.css" rel="stylesheet" media="screen">
     <script src="http://code.jquery.com/jquery.js"></script><!-- Move to local -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/docs.min.js"></script>
     <script src="js/password.js"></script>
   </head>
   <body role="document">
     <div class="container" role="main">
       <div class="row">
         <h1>XKCD-style password generator</h1>
+      </div>
+      <div class="row">
+        <p>
+          Generate XKCD-style passwords (<a href="http://xkcd.com/936/">http://xkcd.com/936/</a>) for fun and profit!
+        </p>
       </div>
       <div class="row">
         <div id="load-error" class="alert alert-danger hidden">
@@ -41,6 +48,22 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="bs-callout bs-callout-warning">
+          <h4>Be warned!</h4>
+          <p>
+            I did not check words lists for swear-words nor the generating algorithm looks for possibly offensive sequences. If any word or sequence offends you, please close your eyes and generate another one :) 
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="bs-callout bs-callout-info">
+          <h4>Words sources and licenses</h4>
+          <p><strong>English common words</strong> is a freely downloadable list of words from <a href="http://www.wordfrequency.info/free.asp">WordFrequency</a> built by Brigham Young University.
+          </p>
+          <p><strong>English nouns</strong> is part of a freely available database of English words from <a href="http://wordnet.princeton.edu/">WordNet</a> built by Princeton University. Its license is available at <a href="http://wordnet.princeton.edu/wordnet/license/">http://wordnet.princeton.edu/wordnet/license/</a>
         </div>
       </div>
     </div>
